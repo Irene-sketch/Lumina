@@ -4,18 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6", //allows frontend and backend connection
-    "dotenv": "^17.3.1", //stores sensitive data like api keys
-    "express": "^5.2.1",  //creates server
-    "nodemon": "^3.1.14" //start server
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "@tensorflow/tfjs": "^4.22.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "tesseract.js": "^7.0.0"
   }
 }
-//backend flow
-//package.json → dependencies → installed in node_modules → used in index.js
