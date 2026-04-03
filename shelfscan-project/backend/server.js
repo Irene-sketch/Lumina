@@ -19,3 +19,4 @@ app.post('/api/history', (req, res) => {
 // IMPORTANT: Use process.env.PORT for Render
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Backend running on port ${PORT}`));
+//“Whenever a user scans an item, the frontend sends it to the backend through a POST API. The backend stores the item along with a timestamp and maintains only the latest 10 records. It then sends the updated history back to the frontend.”

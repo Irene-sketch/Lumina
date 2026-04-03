@@ -11,9 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14"
+    "cors": "^2.8.6", //allows frontend and backend connection
+    "dotenv": "^17.3.1", //stores sensitive data like api keys
+    "express": "^5.2.1",  //creates server
+    "nodemon": "^3.1.14" //start server
   }
 }
+//backend flow
+//package.json → dependencies → installed in node_modules → used in index.js
